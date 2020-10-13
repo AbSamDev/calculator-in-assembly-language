@@ -21,7 +21,7 @@ Byte " Press 5-- to perform floating point division", 0ah, 0dh
 Byte " Press 6-- to show and use specific constants modules", 0ah, 0dh
 Byte " Press 7-- to calculate factorial,combination and permutation", 0ah, 0dh
 Byte " Press 8-- to exit", 0
-; apna
+
 stre byte "Enter 4 to print the value of Universal Constants",0
 stree byte "Enter 5 to Convert the units of quantities",0
 s byte "Enter 6 to Calculate the percentage",0
@@ -108,8 +108,6 @@ var40 byte "101325",0
 per byte "Enter the total value and small value to find percentage ",0
 divi byte "Enter the first value and 2nd value: ",0ah,0dh
 flo real8 100.0
-
-
 
 firstSubMsg  Byte "-------------------Basic Arithmetics----------------", 0ah, 0dh, 0ah, 0dh
     Byte " Press 1-- to perform addition", 0ah, 0dh
@@ -239,7 +237,6 @@ sub40option4 proto
 
 main PROC
  
-
 mov edx,OFFSET firstMsg
 call crlf
 call writeString
@@ -263,7 +260,6 @@ cmp eax,7
 JE C7
 cmp eax,8
 JE en
-
 
 
 C1:
@@ -1257,4 +1253,4 @@ ret
 sub40option4 endp
 
 END main
-
+;This is the end of the project code
