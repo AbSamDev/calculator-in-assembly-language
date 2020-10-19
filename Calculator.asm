@@ -25,6 +25,10 @@ Byte " Press 8-- to exit", 0
 stre byte "Enter 4 to print the value of Universal Constants",0
 stree byte "Enter 5 to Convert the units of quantities",0
 s byte "Enter 6 to Calculate the percentage",0
+
+
+
+
 str1 byte "Enter 1 if you want to see the value of mass of proton",0
 str2 byte "Enter 2 if you want to see the value of mass of nutron",0
 str3 byte "Enter 3 if you want to see the value of mass of electron",0
@@ -135,9 +139,12 @@ fMsgCen  Byte "-------------------percentage----------------", 0
 fMsgUni  Byte "-------------------unit conversion----------------", 0
 fMsgCon  Byte "-------------------specific constants----------------", 0
 
+
+;input for user
 userNum1 DWORD ? ; first integer input by user
 userNum2 DWORD ? ; second integer input by user
 
+;deaclear variables
 userSum DWORD ? ; result of sum
 userSub DWORD ? ; result of difference
 userProd DWORD ? ; result of product
