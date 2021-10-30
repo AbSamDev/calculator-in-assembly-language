@@ -28,7 +28,7 @@ s byte "Enter 6 to Calculate the percentage",0
 
 
 
-
+/* Text on taking input*/
 str1 byte "Enter 1 if you want to see the value of mass of proton",0
 str2 byte "Enter 2 if you want to see the value of mass of nutron",0
 str3 byte "Enter 3 if you want to see the value of mass of electron",0
@@ -125,6 +125,7 @@ SubMsg2 Byte "-------------------Factorial,Combination,Permutation--------------
 
 factMsg1 Byte "Enter the value u want to get factorial of: ", 0
 
+;designning
 fMsgAdd  Byte "-------------------addition----------------", 0
 fMsgSub  Byte "-------------------subtraction----------------", 0    
 fMsgMul  Byte "-------------------product----------------", 0
@@ -196,7 +197,8 @@ modulas PROTO, val1:dword , val2:dword
 exponent PROTO, value: dword, power: dword
 GCD PROTO, val1 : dword , val2 : dword
 Factorial PROTO
-;apna
+
+;declaration
 option4 proto
 option5 proto
 option6 proto
